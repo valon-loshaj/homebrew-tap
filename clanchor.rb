@@ -5,21 +5,21 @@
 class Clanchor < Formula
   desc "Version and distribute your CLAUDE.md files"
   homepage "https://github.com/valon-loshaj/clanchor"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.1.1/clanchor-darwin-amd64.tar.gz"
-      sha256 "37412b90084a72d3139b2399b310f521158a5dcd6446746fb00501b0dc432c9f"
+      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.2.0/clanchor-darwin-amd64.tar.gz"
+      sha256 "6168506ea3c9eab9aaccb9ee67732898fa36c511dcaec6137b265993ae461b10"
 
       define_method(:install) do
         bin.install "clanchor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.1.1/clanchor-darwin-arm64.tar.gz"
-      sha256 "919b030852c8ca7844e751dae69ea227d9166d0731b87533b97d91805c589810"
+      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.2.0/clanchor-darwin-arm64.tar.gz"
+      sha256 "9db1b1ae4b14e764a41ed8bc68250b90b048434d742b7b220902109c7ff895ac"
 
       define_method(:install) do
         bin.install "clanchor"
@@ -29,15 +29,15 @@ class Clanchor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.1.1/clanchor-linux-amd64.tar.gz"
-      sha256 "c0c11693f4b2f94f0cd0072dbf3b130f987c6bd7928666ba042d49cfb399ff3e"
+      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.2.0/clanchor-linux-amd64.tar.gz"
+      sha256 "d9a56814f92c6a1c3af2a273e6ef9f939f739a82e3df51fc64b54d06dae67821"
       define_method(:install) do
         bin.install "clanchor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.1.1/clanchor-linux-arm64.tar.gz"
-      sha256 "803d3b6f36f298fc2298cbdcee2a4602df654f01b8721e9e8620354ea039598e"
+      url "https://github.com/valon-loshaj/clanchor/releases/download/v0.2.0/clanchor-linux-arm64.tar.gz"
+      sha256 "dd09e1211cd3e6f356cbaa75b5bdcc96a767c49970549d66db59aae80c40764c"
       define_method(:install) do
         bin.install "clanchor"
       end
